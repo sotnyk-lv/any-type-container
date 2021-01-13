@@ -3,4 +3,8 @@ project(any_type_container)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(any_type_container main.cpp)
+include_directories(src)
+
+add_subdirectory(src)
+add_subdirectory(tst)
+add_subdirectory(lib/googletest)
